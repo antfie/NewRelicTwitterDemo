@@ -6,6 +6,7 @@ namespace Model.Persistance
     {
         public TweetDbContext() : base("name=TweetDb")
         {
+            Database.SetInitializer(new TweetDbInitializer());
         }
 
         public DbSet<Tweet> Tweets { get; set; }

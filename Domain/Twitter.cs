@@ -18,11 +18,9 @@
 
         public IEnumerable<Tweet> GetLatestTweets()
         {
-            var r =  _repository.GetTweets()
+            return _repository.GetTweets()
                               .OrderByDescending(t => t.Timestamp)
                               .Take(NumberOfLatestTweetsToReturn);
-
-            return r;
         }
 
         public IEnumerable<Tweet> GetLatestTweets(string userName)

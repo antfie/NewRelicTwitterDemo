@@ -10,12 +10,7 @@
         {
             var domain = new Twitter(new TwitterRepository());
 
-            Get["/tweets"] = parameters =>
-            {
-                NewRelic.Api.Agent.NewRelic.RecordMetric("Tweets", 2.34f);
-
-                return Response.AsJson(domain.GetLatestTweets());
-            };
+            Get["/"] = parameters => Response.AsJson(domain.GetLatestTweets());
 
             Get["/users/{userName}/tweets"] = _ =>
             {
