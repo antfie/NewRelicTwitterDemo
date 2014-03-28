@@ -4,11 +4,11 @@ namespace Model.Persistance
 
     public class TweetDbContext : DbContext
     {
+        public DbSet<Tweet> Tweets { get; set; }
+
         public TweetDbContext() : base("name=TweetDb")
         {
             Database.SetInitializer(new TweetDbInitializer());
         }
-
-        public DbSet<Tweet> Tweets { get; set; }
     }
 }

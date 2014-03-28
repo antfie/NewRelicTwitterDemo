@@ -14,7 +14,7 @@
     <RootNamespace>App</RootNamespace>
     <AssemblyName>App</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -106,7 +106,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>52461</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:3000/</IISUrl>
+          <IISUrl>http://localhost/NewRelicTwitterDemo</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

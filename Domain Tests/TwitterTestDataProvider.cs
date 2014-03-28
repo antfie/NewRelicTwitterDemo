@@ -22,7 +22,7 @@
                 new Tweet { Timestamp = DateTime.Parse("25-March-2014") },
                 new Tweet { Timestamp = DateTime.Parse("30-March-2014") },
                 new Tweet { Timestamp = DateTime.Parse("01-March-2014") },
-                new Tweet { Timestamp = DateTime.Parse("02-March-2014"), User = "Antfie"}
+                new Tweet { Timestamp = DateTime.Parse("02-March-2014"), User = "Antfie" }
             };
         }
     }
