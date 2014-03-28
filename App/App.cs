@@ -10,11 +10,12 @@
         {
             var domain = new Twitter(new TwitterRepository());
 
-            Get["/", true] = async (parameters, ct) => Response.AsJson(domain.GetLatestTweets());
+            Get["/"] = _ => Response.AsJson(domain.GetLatestTweets());
 
-            Get["/users/{userName}/tweets", true] = async (parameters, ct) =>
+            Get["/users/{userName}/tweets"] = _ =>
             {
-                string userName = parameters.userName;
+                string userName = _.userName;
+
                 NewRelic.Api.Agent.NewRelic.AddCustomParameter("UserName", userName);
 
                 return Response.AsJson(domain.GetLatestTweets(userName));
